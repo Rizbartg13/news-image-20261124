@@ -34,6 +34,10 @@ def sha256_of(path):
 
 def main():
     os.makedirs(OUT_DIR, exist_ok=True)
+    with open(SRC, "rb") as fh:
+        magic = fh.read(8)
+    if magic != b"\x89PNG\r\n\x1a\n":
+        raise SystemExit("entry.png is not a PNG file")
     shutil.copyfile(SRC, DST)
     digest = sha256_of(DST)
     if digest != EXPECTED_SHA256:
