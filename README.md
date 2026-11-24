@@ -25,9 +25,10 @@ the [make.fun](https://make.fun/c/news-image-20261124) competition
 ## How it runs
 
 `main.py` (Python 3.13, standard library only) copies the pre-rendered
-`entry.png` (1024×1024, 169,311 bytes) to `$MAKEFUN_OUTPUT_DIR/entry.png`
-and verifies its sha256. No network, no randomness — two runs write
-byte-identical output.
+`entry.png` (1024×1024, 59,550 bytes — palette-quantized to 96 colours for
+the size tie-break, verified artefact-free at 1×, 2× and 300px) to
+`$MAKEFUN_OUTPUT_DIR/entry.png` and verifies its sha256. No network, no
+randomness — two runs write byte-identical output.
 
 ## License
 
