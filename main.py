@@ -20,7 +20,7 @@ DST = os.path.join(OUT_DIR, "entry.png")
 
 # sha256 of the committed entry.png; the copy is verified against it.
 EXPECTED_SHA256 = (
-    "c2b3ac534ff30c8d4fd38b1e56553ada7111e1b4b8af360c210922513d3c6e79"
+    "443211c39184d674b7cfbb4e2cc10e2fe45d514d95f4e2d5a4c33ba885953977"
 )
 
 
